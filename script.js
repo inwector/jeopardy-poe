@@ -43,7 +43,7 @@
         name: "Trivia",
         questions: [
             { points: 100, question: "What are we supposed to say when Le Toucan arrives?", answer: "Praise" },
-            { points: 200, question: "Where is Path of Exile's development company, Gear Grinding Games, based in?", answer: "New Zealand" },
+            { points: 200, question: "Which country is Path of Exile's development company, Gear Grinding Games, based in?", answer: "New Zealand" },
             { points: 300, question: "Which game is the recipient of the 'love letter' that is Path of Exile?", answer: "Diablo 2" },
             { points: 400, question: "Who voiced Krillson, Master Fisherman?", answer: "Chris Wilson" },
             { points: 500, question: "What award did Path of Exile win in 2020 in 'Best Evolving Game' category?", answer: "BAFTA" },
