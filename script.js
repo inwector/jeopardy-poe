@@ -132,7 +132,7 @@ function endQuestion(correct) {
     clearInterval(timerInterval);
     let extraInfo = "";
     if (!correct && currentQuestion.q.question === "Which unique item can have no modifiers on it?") {
-        extraInfo = "\n 💡 Ventor's Gamble will still have an implicit.";
+        extraInfo = "\n \n Ventor's Gamble will still have an implicit.";
     }
     if (correct) {
         score += currentQuestion.q.points;
