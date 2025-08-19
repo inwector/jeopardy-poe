@@ -36,7 +36,7 @@
             { points: 200, question: "Which league had approximately 50% of players playing Cyclone according to poe.ninja?", answer: "Legion" },
             { points: 300, question: "Which league had exalted orb, as the currency for meta mod crafting, prices drop down to ridiculous numbers like 20 chaos orbs?", answer: "Heist" },
             { points: 400, question: "Which league introduced Vaal Vessels to Vaal Temple maps?", answer: "Archnemesis" },
-            { points: 500, question: "Which league was the second longest full league in PoE history (longest is Settlers with 45 hours)?", answer: "Legacy" }
+            { points: 500, question: "Which league was the second longest full league in PoE history (longest is Settlers with 45 weeks)?", answer: "Legacy" }
         ]
     },
     {
