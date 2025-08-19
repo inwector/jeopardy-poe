@@ -248,3 +248,59 @@ h1 {
         font-size: 1.2rem;
     }
 }
+
+@keyframes pop {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+
+    50% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-8px);
+    }
+
+    75% {
+        transform: translateX(8px);
+    }
+}
+
+.feedback-correct {
+    color: limegreen;
+    font-size: 32px;
+    font-weight: bold;
+    animation: pop 0.5s ease;
+}
+
+.feedback-wrong {
+    color: red;
+    font-size: 28px;
+    font-weight: bold;
+    animation: shake 0.5s ease;
+}
+
+#answer-input {
+    font-size: 1rem; /* bigger text */
+    padding: 1rem; /* more inner spacing */
+    width: 80%; /* make it wider if you want */
+}
+
+#submit-answer {
+    font-size: 1rem;
+    padding: 1rem 2rem; /* taller and wider */
+    border-radius: 12px; /* optional: rounder button */
+}

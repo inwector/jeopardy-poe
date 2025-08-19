@@ -102,7 +102,7 @@ function openQuestion(q, tile) {
     submitAnswer.style.display = "inline-block";
     closeModal.style.display = "none";
 
-    startTimer(15);
+    startTimer(30);
 }
 
 
@@ -137,9 +137,15 @@ function endQuestion(correct) {
     if (correct) {
         score += currentQuestion.q.points;
         feedback.innerText = "✅ Correct!";
+        feedback.style.color = "limegreen";
+        feedback.style.fontSize = "32px";
+        feedback.style.fontWeight = "bold";
     } else {
         score -= currentQuestion.q.points;
-        feedback.innerText = `❌ Wrong! Correct answer: ${currentQuestion.q.answer}` + extraInfo;
+        feedback.innerHTML = `<span style="font-size:72px;">❌</span><br>Wrong!<br><br>Correct answer: ${currentQuestion.q.answer}${extraInfo}`;
+        feedback.style.color = "red";
+        feedback.style.fontSize = "28px";
+        feedback.style.fontWeight = "bold";
 
     }
     scoreDisplay.innerText = score;
