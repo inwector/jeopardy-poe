@@ -51,6 +51,10 @@
     }
 ];
 
+//Count questions
+let totalQuestions = categories.reduce((sum, cat) => sum + cat.questions.length, 0);
+let answeredCount = 0;
+
 let score = 0;
 let currentQuestion = null;
 let timerInterval;
@@ -85,6 +89,7 @@ function buildBoard() {
             board.appendChild(tile);
         });
     }
+
 }
 
 function openQuestion(q, tile) {
@@ -154,7 +159,48 @@ function endQuestion(correct) {
     closeModal.style.display = "inline-block";
     submitAnswer.style.display = "none";   // hide submit after answering
     answerInput.disabled = true;           // prevent changing answer
+
+    answeredCount++;
 }
+
+
+function endGame() {
+    // Clear the board
+    const scoreBar = scoreDisplay?.closest("h2");
+    if (scoreBar) scoreBar.style.display = "none";
+
+    board.innerHTML = "";
+
+
+    // Example players (replace with your own)
+    const players = [
+        { name: "Ben", score: 7500 },
+        { name: "Mark", score: 7000 },
+        { name: "Dwayne 'The Rock' Johnson", score: 2600 },
+        { name: "My friend who started recently", score: -5500 }
+    ];
+
+    // Sort players by score
+    players.sort((a, b) => b.score - a.score);
+
+    // Create Game Over screen
+    const endScreen = document.createElement("div");
+    endScreen.className = "end-screen";
+    endScreen.innerHTML = `
+        <h1>🎉 Game Over! 🎉</h1>
+        <p>Your final score: <strong>${score}</strong></p>
+        <h2>🏆 Leaderboard</h2>
+        <table class="score-table">
+            <tr><th>Rank</th><th>Player</th><th>Score</th></tr>
+            ${players.map((p, i) =>
+        `<tr><td>${i + 1}</td><td>${p.name}</td><td>${p.score}</td></tr>`
+    ).join("")}
+        </table>
+    `;
+    board.appendChild(endScreen);
+
+}
+
 
 closeModal.onclick = () => {
     modal.classList.remove("open");            // was: modal.style.display = "none";
@@ -164,6 +210,10 @@ closeModal.onclick = () => {
 modal.addEventListener("click", (e) => {
     if (e.target === modal && closeModal.style.display !== "none") {
         modal.classList.remove("open");
+    }
+
+    if (answeredCount === totalQuestions) {
+        endGame();
     }
 });
 document.addEventListener("keydown", (e) => {

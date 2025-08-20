@@ -1,4 +1,4 @@
-body {
+﻿body {
     font-family: Arial, sans-serif;
     background: #111;
     color: #eee;
@@ -304,3 +304,46 @@ h1 {
     padding: 1rem 2rem; /* taller and wider */
     border-radius: 12px; /* optional: rounder button */
 }
+
+.end-screen {
+    text-align: center;
+    padding: 60px; /* more breathing room */
+    font-size: 28px; /* ⬅️ bigger base text */
+    color: white;
+    width:800px;
+}
+
+    .end-screen h1 {
+        font-size: 64px; /* ⬅️ much bigger title */
+        color: gold;
+    }
+
+.score-table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 80%; /* ⬅️ make table wider */
+    max-width: 900px; /* ⬅️ cap so it doesn’t stretch too far */
+    background: rgba(0,0,0,0.6);
+    border-radius: 12px;
+    overflow: hidden;
+    font-size: 20px; /* ⬅️ make text a little bigger */
+}
+
+    .score-table th, .score-table td {
+        padding: 14px 20px; /* ⬅️ more horizontal padding */
+        border: 1px solid #444;
+        text-align: center;
+    }
+
+    .score-table th {
+        background: #222;
+        color: gold;
+    }
+
+        /* ⬅️ Player column should take more space */
+        .score-table td:nth-child(2),
+        .score-table th:nth-child(2) {
+            text-align: left;
+            width: 50%; /* ⬅️ half the table for names */
+            padding-left: 30px; /* ⬅️ extra space from the edge */
+        }
