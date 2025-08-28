@@ -174,10 +174,7 @@ function endGame() {
 
     // Example players (replace with your own)
     const players = [
-        { name: "Ben", score: 7500 },
-        { name: "Mark", score: 7000 },
-        { name: "Dwayne 'The Rock' Johnson", score: 2600 },
-        { name: "My friend who started recently", score: -5500 }
+        { name: "HeavyHeals", score: 700 }
     ];
 
     // Sort players by score
