@@ -51,6 +51,7 @@
     }
 ];
 
+
 //Count questions
 let totalQuestions = categories.reduce((sum, cat) => sum + cat.questions.length, 0);
 let answeredCount = 0;
