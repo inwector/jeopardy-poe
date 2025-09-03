@@ -16,7 +16,7 @@
             { points: 200, question: "Which unique boot allows you to deal damage just by moving around?", answer: "Abberath's Hooves" },
             { points: 300, question: "Which unique flask should not be used along with the keystone 'Avatar of Fire'?", answer: "Atziri's Promise" },
             { points: 400, question: "Which unique ring provides flat life regen per character level?", answer: "Kikazaru" },
-            { points: 500, question: "Which unique item can have no modifiers on it?", answer: "Adorned" }
+            { points: 500, question: "Which unique item can have no modifiers on it, besides Tabula Rasa?", answer: "Adorned" }
         ]
     },
     {

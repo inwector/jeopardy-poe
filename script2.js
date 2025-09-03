@@ -89,13 +89,13 @@ const categories = [
             { points: 200, question: "Which two handed axe base has the highest attack speed?", answer: "Despot Axe" },
             { points: 300, question: "Which item base has 10% base crit chance and requires at least 245 intelligence to wield?", answer: "Prophecy Wand" },
             { points: 400, question: "Which item base naturally has all 6 influences?", answer: "Astrolobe Amulet" },
-            { points: 500, question: "What is the lowest level requirement body armor that is dex/int?", answer: "Padded Vest" }
+            { points: 500, question: "What is the lowest level requirement body armor base that is dex/int?", answer: "Padded Vest" }
         ]
     },
     {
         name: "Ascendancies",
         questions: [
-            { points: 100, question: "What is the most overpowered defensive ascendancy node despite getting nerfed in 3.26?", answer: "Escape Artist" },
+            { points: 100, question: "Which ascendancy grants evasion rating based on equipped helmet's energy shield?", answer: "Escape Artist" },
             { points: 200, question: "What is the ascendancy node that grants +2 to maximum number of summoned golems?", answer: "Liege of the Primordial" },
             { points: 300, question: "Which ascendancy node makes you take 10% more damage?", answer: "Aspect of Carnage" },
             { points: 400, question: "Which ascendancy node has a half-baked Nimis effect?", answer: "Shrapnel Specialist" },
