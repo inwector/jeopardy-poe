@@ -68,7 +68,7 @@ const categories = [
             { points: 100, question: "Which unique item provides up to 240% global critical strike multiplier?", answer: "Marylene's Fallacy" },
             { points: 200, question: "Which kind of timeless jewel gives bonuses based on Devotion?", answer: "Militant Faith" },
             { points: 300, question: "Which unique boots have the line 'Bleeding cannot be inflicted on you' ?", answer: "Death's Door" },
-            { points: 400, question: "Which unique item can roll '+1 to Maximum Frenzy Charges' on it's implicit without a corruption?", answer: "Perepiteia" },
+            { points: 400, question: "Which unique shield can roll '+1 to Maximum Frenzy Charges' on it's implicit without a corruption?", answer: "Perepiteia" },
             { points: 500, question: "Which unique item has the modifier 'Cast Socketed Minion Spells on Kill with this Weapon' ?", answer: "Null's Inclination" }
         ]
     },
