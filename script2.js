@@ -76,10 +76,10 @@ const categories = [
         name: "Keystones",
         questions: [
             { points: 100, question: "Never miss, no crits", answer: "Resolute Technique" },
-            { points: 200, question: "Evasion Rating is doubled for projectiles, but 25% less evasion rating against melee attacks", answer: "Arrow Dancing" },
-            { points: 300, question: "Share your charges to party members", answer: "Conduit" },
-            { points: 400, question: "DoT multiplier is equal to crit multiplier, but crits don't deal extra damage, nor deal ailments without crits.", answer: "Perfect Agony" },
-            { points: 500, question: "More flask charges per empty flask slots", answer: "The Traitor" }
+            { points: 200, question: "Share your charges to party members", answer: "Conduit" },
+            { points: 300, question: "DoT multiplier is equal to crit multiplier, but crits don't deal extra damage, nor deal ailments without crits.", answer: "Perfect Agony" },
+            { points: 400, question: "Evasion Rating is doubled for projectiles, but 25% less evasion rating against melee attacks", answer: "Arrow Dancing" },
+            { points: 500, question: "More flask charges per empty flask slots", answer: "Traitor" }
         ]
     },
     {
